@@ -8,7 +8,8 @@ Within this repository, you'll find a collection of solution architecture diagra
 
 Happy diagramming! ^_^
 
-Links & Documentation:
+
+### Links & Documentation:
   - https://d2lang.com/tour/install
   - https://github.com/terrastruct/d2/releases
   - https://github.com/terrastruct/d2/blob/master/docs/assets/cheat_sheet.pdf
