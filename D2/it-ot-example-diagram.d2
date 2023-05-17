@@ -7,8 +7,8 @@ title: |md
 | { near: top-center }
 
 IT Environment: {
-    corporate-zone: {
-      user
+    shared-services: {
+      identity serivce
     }
     enterprise-lan: {
       corporate-network
@@ -20,7 +20,7 @@ IT Environment: {
   }
 
 # flows
-IT Environment.corporate-zone.user -> IT Environment.perimeter-zone.ngfw: https
+IT Environment.enterprise-lan.corporate-network.user -> IT Environment.perimeter-zone.ngfw: https
 IT Environment.perimeter-zone.ngfw -> OT Environment.internet-dmz.firewall: private link
 
 OT Environment.internet-dmz.firewall -> OT Environment.operations-dmz.bastion-host: https
