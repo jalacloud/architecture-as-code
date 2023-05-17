@@ -1,1 +1,42 @@
+#test architecture diagram using d2 programming language
+# https://play.d2lang.com/
 
+title: |md
+  # Example IT/OT Pattern
+  Pattern 1: User(s) in IT environment accessing OT environment API(s)
+| { near: top-center }
+
+IT Environment: {
+    corporate-zone: {
+      user
+    }
+    enterprise-lan: {
+      corporate-network
+      guest-wireless
+    }
+    perimeter-zone: {
+      ngfw
+    }
+  }
+
+# flows
+IT Environment.corporate-zone.user -> IT Environment.perimeter-zone.ngfw: https
+IT Environment.perimeter-zone.ngfw -> OT Environment.internet-dmz.firewall: private link
+
+OT Environment.internet-dmz.firewall -> OT Environment.operations-dmz.bastion-host: https
+
+public-internet: {
+  cloud: Internet
+  cloud.shape: cloud
+}
+
+OT Environment: {
+    internet-dmz: {
+      firewall
+    }
+    operations-dmz: {
+      bastion-host
+    }
+  }
+
+direction: right
