@@ -8,6 +8,8 @@ Within this repository, you'll find a collection of solution architecture diagra
 
 Happy diagramming! ^_^
 
+![image](https://github.com/jalacloud/solution-architecture/assets/46580139/0bac6b44-30d3-4fdc-a803-753514808e83)
+
 
 ### Links & Documentation:
   - https://d2lang.com/tour/install
