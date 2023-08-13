@@ -1,4 +1,4 @@
-# Solution Architecture using declarative diagramming (D2)
+# Architecture-as-code using declarative diagramming (D2)
 
 This repository is my personal learning journey in the world of architecture-as-code (AAC). 
 
