@@ -1,8 +1,9 @@
 ```mermaid
 C4Context
   title System Context diagram for 3-Tier Web Application
+
+  Person(user, "End User", "Uses the web application through a browser or mobile app.")
   Enterprise_Boundary(b0, "WebApplicationBoundary") {
-    Person(user, "End User", "Uses the web application through a browser or mobile app.")
     
     System(webApp, "Web Application", "A modern web application with a 3-tier architecture.")
 
